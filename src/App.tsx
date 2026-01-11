@@ -1,6 +1,6 @@
 import owlLogo from './owlearning_logo.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBullseye, faHeart, faLightbulb  } from '@fortawesome/free-solid-svg-icons';
+import { faBullseye, faHeart, faLightbulb, faGraduationCap, faMessage } from '@fortawesome/free-solid-svg-icons';
 
 function App() {
 
@@ -143,28 +143,174 @@ function App() {
           <button className = "bg-white text-amber-600 px-6 py-3 rounded-full hover:bg-gray-100 transition-colors">
             Become a Volunteer
           </button>
-          <button className = "ml-8 bg-white text-amber-600 px-6 py-3 rounded-full hover:bg-gray-100 transition-colors">
-            Donate Now
-          </button> 
         </div>
       </section>
 
-      <section>
-        <h1>Get In Touch</h1>
-        <p>Have questions or want to learn more about our programs? Reach out to us! We'd love to hear from you.</p>
-        <div className = "grid md:grid-cols-2 gap-10 px-4">
-          <div>
-
+  {/* Contact Section */}
+      <section id="contact" className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Get In Touch</h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Have questions? We'd love to hear from you. Reach out to learn more about our programs.
+            </p>
           </div>
-          <div>
-            <form>
 
-            </form>
+          <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+            <div className="space-y-8">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <FontAwesomeIcon icon={faMessage} className="text-amber-600 fa-lg"/>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-gray-900 mb-1">Email Us</h3>
+                  <p className="text-gray-600">tutoring@owlearning.org</p>
+                  <p className="text-gray-600">volunteer@owllearning.org</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <FontAwesomeIcon icon={faBullseye} className="text-amber-600 mr-2"/>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-gray-900 mb-1">Call Us</h3>
+                  <p className="text-gray-600">(555) 123-4567</p>
+                  <p className="text-sm text-gray-500">Monday - Friday, 9am - 5pm</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <FontAwesomeIcon icon={faBullseye} className="text-amber-600 mr-2"/>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-gray-900 mb-1">Visit Us</h3>
+                  <p className="text-gray-600">123 Education Lane</p>
+                  <p className="text-gray-600">Your City, ST 12345</p>
+                </div>
+              </div>
+
+              <div className="bg-amber-50 rounded-xl p-6 border-2 border-amber-200">
+                <h3 className="font-semibold text-gray-900 mb-2">Request Tutoring Services</h3>
+                <p className="text-gray-600 mb-4">
+                  If you're a student in foster care or from an underprivileged background, fill out our intake form and we'll match you with a tutor.
+                </p>
+                <button className="bg-amber-600 text-white px-6 py-2 rounded-full hover:bg-amber-700 transition-colors">
+                  Student Application
+                </button>
+              </div>
+            </div>
+
+            <div className="bg-gray-50 rounded-2xl p-8">
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">Send Us a Message</h3>
+              <form className="space-y-4">
+                <div>
+                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
+                    Name
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-600 focus:border-transparent outline-none"
+                    placeholder="Your name"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
+                    Email
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-600 focus:border-transparent outline-none"
+                    placeholder="your@email.com"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-1">
+                    Subject
+                  </label>
+                  <select
+                    id="subject"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-600 focus:border-transparent outline-none"
+                  >
+                    <option>I need tutoring services</option>
+                    <option>I want to volunteer</option>
+                    <option>I want to donate</option>
+                    <option>General inquiry</option>
+                  </select>
+                </div>
+                <div>
+                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
+                    Message
+                  </label>
+                  <textarea
+                    id="message"
+                    rows={4}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-600 focus:border-transparent outline-none resize-none"
+                    placeholder="Tell us more..."
+                  />
+                </div>
+                <button
+                  type="submit"
+                  className="w-full bg-amber-600 text-white px-6 py-3 rounded-full hover:bg-amber-700 transition-colors"
+                >
+                  Send Message
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </section>
-  </nav>
-  )
+
+      {/* Footer */}
+      <footer className="bg-gray-900 text-white py-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-4 gap-8 mb-8">
+            <div>
+              <div className="flex items-center gap-2 mb-4">
+                  <FontAwesomeIcon icon={faGraduationCap} className="text-amber-600 mr-2"/>
+                <span className="font-semibold text-xl">Owl Learning</span>
+              </div>
+              <p className="text-gray-400">
+                Empowering students in foster care and underprivileged communities through free tutoring and educational support.
+              </p>
+            </div>
+
+            <div>
+              <h4 className="font-semibold mb-4">Quick Links</h4>
+              <ul className="space-y-2 text-gray-400">
+                <li><a href="#about" className="hover:text-amber-400 transition-colors">About Us</a></li>
+                <li><a href="#programs" className="hover:text-amber-400 transition-colors">Programs</a></li>
+                <li><a href="#impact" className="hover:text-amber-400 transition-colors">Impact</a></li>
+                <li><a href="#get-involved" className="hover:text-amber-400 transition-colors">Get Involved</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 className="font-semibold mb-4">For Students</h4>
+              <ul className="space-y-2 text-gray-400">
+                <li><a href="#" className="hover:text-amber-400 transition-colors">Request a Tutor</a></li>
+                <li><a href="#" className="hover:text-amber-400 transition-colors">Volunteer</a></li>
+                <li><a href="#contact" className="hover:text-amber-400 transition-colors">Contact</a></li>
+              </ul>
+            </div>
+
+          </div>
+
+          <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+            <p className="text-gray-400 text-sm mb-4 md:mb-0">
+              © 2026 Owl Learning. All rights reserved. 501(c)(3) Non-Profit Organization
+            </p>
+            <div className="flex gap-6 text-gray-400 text-sm">
+              <a href="#" className="hover:text-amber-400 transition-colors">Privacy Policy</a>
+              <a href="#" className="hover:text-amber-400 transition-colors">Terms of Service</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </nav>);
 }
 
 export default App
