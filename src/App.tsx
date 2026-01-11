@@ -1,6 +1,6 @@
 import owlLogo from './owlearning_logo.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBullseye, faHeart, faLightbulb, faGraduationCap, faMessage } from '@fortawesome/free-solid-svg-icons';
+import { faBullseye, faHeart, faLightbulb, faGraduationCap, faMessage, faPhone } from '@fortawesome/free-solid-svg-icons';
 
 function App() {
 
@@ -157,7 +157,7 @@ function App() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
-            <div className="space-y-8">
+            <div className="space-y-8 mt-10">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center flex-shrink-0">
                   <FontAwesomeIcon icon={faMessage} className="text-amber-600 fa-lg"/>
@@ -165,29 +165,18 @@ function App() {
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-1">Email Us</h3>
                   <p className="text-gray-600">tutoring@owlearning.org</p>
-                  <p className="text-gray-600">volunteer@owllearning.org</p>
+                  <p className="text-gray-600">owlearning101@gmail.com</p>
                 </div>
               </div>
 
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <FontAwesomeIcon icon={faBullseye} className="text-amber-600 mr-2"/>
+                    <FontAwesomeIcon icon={faPhone} className="text-amber-600 fa-lg"/>
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-1">Call Us</h3>
-                  <p className="text-gray-600">(555) 123-4567</p>
-                  <p className="text-sm text-gray-500">Monday - Friday, 9am - 5pm</p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <FontAwesomeIcon icon={faBullseye} className="text-amber-600 mr-2"/>
-                </div>
-                <div>
-                  <h3 className="font-semibold text-gray-900 mb-1">Visit Us</h3>
-                  <p className="text-gray-600">123 Education Lane</p>
-                  <p className="text-gray-600">Your City, ST 12345</p>
+                  <p className="text-gray-600">925-886-9033</p>
+                  <p className="text-sm text-gray-500">Leave us a voicemail and we will get back to you</p>
                 </div>
               </div>
 
@@ -289,11 +278,13 @@ function App() {
             </div>
 
             <div>
-              <h4 className="font-semibold mb-4">For Students</h4>
+              <h4 className="font-semibold mb-4">Other</h4>
               <ul className="space-y-2 text-gray-400">
-                <li><a href="#" className="hover:text-amber-400 transition-colors">Request a Tutor</a></li>
-                <li><a href="#" className="hover:text-amber-400 transition-colors">Volunteer</a></li>
+                <li><a href="" className="hover:text-amber-400 transition-colors">Request a Tutor</a></li>
+                <li><a href="" className="hover:text-amber-400 transition-colors">Volunteer</a></li>
                 <li><a href="#contact" className="hover:text-amber-400 transition-colors">Contact</a></li>
+                <li><a href="https://www.instagram.com/owlearning_/" className="hover:text-amber-400 transition-colors">Instagram</a></li>
+
               </ul>
             </div>
 
