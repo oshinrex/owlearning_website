@@ -18,8 +18,11 @@ function App() {
               <a href="#get-involved" className="text-gray-700 hover:text-amber-600 transition-colors">Get Involved</a>
               <a href="#contact" className="text-gray-700 hover:text-amber-600 transition-colors">Contact</a>
         </div>
-       <button className="bg-amber-600 text-white px-6 py-2 rounded-full hover:bg-amber-700 transition-colors mr-4">
-          Login
+       <button className="bg-amber-600 text-white px-6 py-2 rounded-full hover:bg-amber-700 transition-colors mr-4" onClick ={() => window.open(
+                    "https://docs.google.com/forms/d/e/1FAIpQLSd39gud5Pg5swBPI8xWKNAnelraSpLcleAevM213gb_VaCiFA/viewform",
+                    "_blank"
+                  )}>
+          Enroll
         </button>
       </div>
       </div>
@@ -35,10 +38,10 @@ function App() {
               <p className = "text-gray-700 mb-8">
                 Owl Learning provides free tutoring and educational support to students in foster care and underprivileged communities, helping them unlock their full potential.
               </p>
-              <button className = "bg-amber-600 text-white px-6 py-3 rounded-full hover:bg-amber-700 transition-colors">
+              <button className = "bg-amber-600 text-white px-6 py-3 rounded-full hover:bg-amber-700 transition-colors" onClick ={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSd39gud5Pg5swBPI8xWKNAnelraSpLcleAevM213gb_VaCiFA/viewform")}>
                 Request Tutoring
               </button>
-              <button className = "ml-8 text-amber-600 px-6 py-3 rounded-full border-2 border-amber-600 hover:bg-amber-50 transition-colors">
+              <button className = "ml-8 text-amber-600 px-6 py-3 rounded-full border-2 border-amber-600 hover:bg-amber-50 transition-colors" onClick = {() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSfdWpQpssL4yZCjBc3LhkUWwdUva9Xy_RjhmPlrAQy2DCv9QQ/viewform")}>
                 Become a Tutor
               </button>
             </div>
@@ -140,7 +143,10 @@ function App() {
           <div>
 
           </div>
-          <button className = "bg-white text-amber-600 px-6 py-3 rounded-full hover:bg-gray-100 transition-colors">
+          <button className = "bg-white text-amber-600 px-6 py-3 rounded-full hover:bg-gray-100 transition-colors" onClick={() => window.open(
+                    "https://docs.google.com/forms/d/e/1FAIpQLSfdWpQpssL4yZCjBc3LhkUWwdUva9Xy_RjhmPlrAQy2DCv9QQ/viewform?usp=header",
+                    "_blank"
+                  )}>
             Become a Volunteer
           </button>
         </div>
@@ -185,7 +191,13 @@ function App() {
                 <p className="text-gray-600 mb-4">
                   If you're a student in foster care or from an underprivileged background, fill out our intake form and we'll match you with a tutor.
                 </p>
-                <button className="bg-amber-600 text-white px-6 py-2 rounded-full hover:bg-amber-700 transition-colors">
+                <button
+                  className="bg-amber-600 text-white px-6 py-2 rounded-full hover:bg-amber-700 transition-colors"
+                  onClick={() => window.open(
+                    "https://docs.google.com/forms/d/e/1FAIpQLSd39gud5Pg5swBPI8xWKNAnelraSpLcleAevM213gb_VaCiFA/viewform?usp=sharing&ouid=118077698378327846413",
+                    "_blank"
+                  )}
+                >
                   Student Application
                 </button>
               </div>
@@ -280,8 +292,8 @@ function App() {
             <div>
               <h4 className="font-semibold mb-4">Other</h4>
               <ul className="space-y-2 text-gray-400">
-                <li><a href="" className="hover:text-amber-400 transition-colors">Request a Tutor</a></li>
-                <li><a href="" className="hover:text-amber-400 transition-colors">Volunteer</a></li>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSd39gud5Pg5swBPI8xWKNAnelraSpLcleAevM213gb_VaCiFA/viewform?usp=sharing&ouid=118077698378327846413" className="hover:text-amber-400 transition-colors">Request a Tutor</a></li>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfdWpQpssL4yZCjBc3LhkUWwdUva9Xy_RjhmPlrAQy2DCv9QQ/viewform?usp=header" className="hover:text-amber-400 transition-colors">Volunteer</a></li>
                 <li><a href="#contact" className="hover:text-amber-400 transition-colors">Contact</a></li>
                 <li><a href="https://www.instagram.com/owlearning_/" className="hover:text-amber-400 transition-colors">Instagram</a></li>
 
@@ -292,12 +304,9 @@ function App() {
 
           <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              © 2026 Owl Learning. All rights reserved. 501(c)(3) Non-Profit Organization
+              © 2026 Owl Learning. All rights reserved.
             </p>
-            <div className="flex gap-6 text-gray-400 text-sm">
-              <a href="#" className="hover:text-amber-400 transition-colors">Privacy Policy</a>
-              <a href="#" className="hover:text-amber-400 transition-colors">Terms of Service</a>
-            </div>
+        
           </div>
         </div>
       </footer>
